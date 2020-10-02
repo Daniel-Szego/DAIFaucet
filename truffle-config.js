@@ -1,3 +1,7 @@
+
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const testMnemonic = "annual dinner enter glad pave drill size cry train guilt black gain";
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -57,6 +61,16 @@ module.exports = {
       // from: <address>,        // Account to send txs from (default: accounts[0])
       // websockets: true        // Enable EventEmitter interface for web3 (default: false)
     // },
+
+    kovan: {
+      provider: () => new HDWalletProvider(testMnemonic, `https://kovan.infura.io/v3/bc81a98f20844e2caa3cd2b83bd9ee0b`),
+      network_id: 42,
+      gas: 6000000,
+      gasPrice: 1000000000, // 1 gwei
+      networkCheckTimeout: 500000000,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    }
 
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.

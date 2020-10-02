@@ -1,0 +1,35 @@
+.DS_Store
+node_modules
+/dist
+/build
+/build/contracts
+.build
+.build/*
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+#truffle
+.tern-port
+
+#ganache databases, accounts
+personal
+
+#processes.env
+#secrets.json
+#network.json

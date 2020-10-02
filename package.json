@@ -1,0 +1,29 @@
+{
+  "name": "daifaucet",
+  "version": "1.0.0",
+  "description": "Simple interface for changing ETH to DAI with the help of Uniswap",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.0.0",
+    "@truffle/hdwallet-provider": "^1.0.40",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "openzeppelin-solidity": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Szego/DAIFaucet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-Szego/DAIFaucet/issues"
+  },
+  "homepage": "https://github.com/Daniel-Szego/DAIFaucet#readme"
+}
